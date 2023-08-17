@@ -100,12 +100,17 @@ class Formulaire extends StatefulWidget {
 }
 
 class MonFormulaireState extends State<Formulaire> {
+
+ 
+
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _motdepasseController = TextEditingController();
 
   bool _isOver18 = false;
   bool _acceptTerms = false;
   late Utilisateur _utilisateur;
+
+
 
   String? _validateEmail(String? value) {
     String test = value ?? "";
@@ -160,6 +165,7 @@ class MonFormulaireState extends State<Formulaire> {
             alignment: Alignment.center,
             child: ElevatedButton(
               onPressed: () {
+
                 if (_acceptTerms) {
                   _utilisateur = Utilisateur(_emailController.text,
                       _motdepasseController.text, _isOver18, _acceptTerms);
