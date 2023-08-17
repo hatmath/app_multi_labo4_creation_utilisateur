@@ -7,7 +7,7 @@
 
 # LANCER L'APPLICATION
 
-    flutter run à la racine du projet. Puis choisir l'option 2 pour rouler sous Chrome
+    flutter run lib/main_original.dart à la racine du projet. Puis choisir l'option 2 pour rouler sous Chrome
 
 # ÉNONCÉ/DESCRIPTION
 
